@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/hovercard.css';
+import { Link } from "react-router-dom";
 
 class FinancialAid extends React.Component {
     render() {
@@ -370,7 +371,7 @@ class FinancialAid extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <p className="text-center my-0"><a href="/index.html" className="btn btn-primary">Back To HomePage</a></p>
+                    <Link to="/"><p className="text-center my-0"><a className="btn btn-primary">Back To HomePage</a></p></Link>
                     <p className="text-center my-0"> Questions? Reach out at <a href="mailto: ghprepscholar@gmail.com">ghprepscholar@gmail.com</a></p>
                     <p className="text-center my-0"><a href="#">Back to top</a></p>
                 </main>

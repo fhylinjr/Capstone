@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/required-docs.css';
+import { Link } from "react-router-dom";
 
 class TestPrep extends React.Component {
     render() {
@@ -123,7 +124,7 @@ class TestPrep extends React.Component {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><a href="https://www.afextestprep.com">Timeline Trust</a></td>
+                                            <td><a href="https://www.timelinetrust.com/">Timeline Trust</a></td>
                                             <td>Accra / Kumasi</td>
                                             <td>Tuition: GHC 2000 ; Extra Services: GHC 5000.
                                             </td>
@@ -140,7 +141,7 @@ class TestPrep extends React.Component {
                         </div>
                     </div>
                     <hr className="col-3 col-md-2 mb-5" />
-                    <p className="text-center my-0"><a href="/college app.html" className="btn btn-primary">Continue To College Apps</a></p>
+                    <Link to="/apply"><p className="text-center my-0"><a className="btn btn-primary">Continue To College Apps</a></p></Link>
                     <p className="text-center my-0"> Questions? Reach out at <a href="mailto: ghprepscholar@gmail.com">ghprepscholar@gmail.com</a></p>
                     <p className="text-center my-0"><a href="#">Back to top</a></p>
                 </main>

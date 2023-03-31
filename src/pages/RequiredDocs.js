@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/required-docs.css';
+import { Link } from "react-router-dom";
 
 class RequiredDocs extends React.Component {
     render() {
@@ -27,7 +28,7 @@ class RequiredDocs extends React.Component {
                                 <h2>Documents</h2>
                                 <p>Once you have these you are ready to start applying. Documents for applying for financial aid can
                                     be
-                                    accessed on the <a href="/financial aid.html">Financial Aid</a> page
+                                    accessed on the <Link to="/financialAid"><a>Financial Aid</a></Link> page
                                 </p>
                                 <div className="list-group" id="list-tab" role="tablist">
                                     <a className="list-group-item list-group-item-action active" id="list-doc1-list" data-bs-toggle="list" href="#list-doc1" role="tab" aria-controls="list-doc1">WASSCE Result/
@@ -182,7 +183,7 @@ class RequiredDocs extends React.Component {
                                                         any college, then that college will request
                                                         for official scores which can only be submitted by College Board on your
                                                         behalf. Some schools might consider your counselor
-                                                        submission as official as well. Learn more about the SAT on our <a href="/test prep.html">Test Prep</a> page or checkout the college board
+                                                        submission as official as well. Learn more about the SAT on our <Link to="/testprep"><a>Test Prep</a></Link> page or checkout the college board
                                                         website!
                                                     </p>
                                                     <a href="https://satsuite.collegeboard.org/sat/scores" className="btn btn-primary">Check SAT Scores!</a>
@@ -276,7 +277,7 @@ class RequiredDocs extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <p className="text-center my-0"><a href="/test prep.html" className="btn btn-primary">Continue To Test Prep</a></p>
+                    <Link to="/testprep"><p className="text-center my-0"><a className="btn btn-primary">Continue To Test Prep</a></p></Link>
                     <p className="text-center my-0"> Questions? Reach out at <a href="mailto: ghprepscholar@gmail.com">ghprepscholar@gmail.com</a></p>
                     <p className="text-center my-0"><a href="#">Back to top</a></p>
                 </main>

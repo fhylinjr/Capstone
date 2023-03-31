@@ -61,10 +61,8 @@ class Header2 extends React.Component {
                                         Financial Aid
                                     </Nav.Link>
                                 </Nav.Item>
-                                <NavDropdown title="Dropdown" id="nav-dropdown">
-                                    <NavDropdown.Item><Nav.Link as={Link} to="/">
-                                        About Us
-                                    </Nav.Link></NavDropdown.Item>
+                                <NavDropdown title="More" id="nav-dropdown">
+                                <NavDropdown.Item href='https://youtu.be/siAQNz94z_Y'>About Us</NavDropdown.Item>
                                     <NavDropdown.Item href='https://youtube.com/playlist?list=PLK_coAouRKGMi267s8-F6vPZ_pfQEd7aG'>Stories</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item><Nav.Link as={Link} to="/contactUs">

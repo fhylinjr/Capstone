@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/required-docs.css';
+import { Link } from "react-router-dom";
 
 class FAQ extends React.Component {
     render() {
@@ -27,7 +28,7 @@ class FAQ extends React.Component {
                                 </a><div className="card card-body"><a data-bs-toggle="collapse" href="#faq1" aria-expanded="false" aria-controls="faq1" className="text-decoration-none">
                                     In that case you have to select the option: "Not filed, and not required to file, a tax
                                     return" under the question: "Select the student's parents' federal tax return status for
-                                    (year)". For detailed steps, watch </a><a className="text-decoration-none" href="https://youtu.be/br-hEEHbMfk">this guide</a>
+                                    (year)". For detailed steps, watch <a href="https://youtu.be/br-hEEHbMfk">this guide</a></a>
                                     </div>
                                 </div>
                                 <a data-bs-toggle="collapse" href="#faq2" aria-expanded="false" aria-controls="faq2" className="text-decoration-none">

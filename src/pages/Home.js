@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/carousel.css';
 import '../css/infinitecarousel.css';
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
     render() {
@@ -26,7 +27,8 @@ class Home extends React.Component {
                                         <h1 className="display-3 lineUp">Welcome to GH Prep Scholar.</h1>
                                         <p className="fw-bold lineUp"><mark>Your one stop for successful and complete US college
                                             application as a Ghanaian.</mark></p>
-                                        <p><a className="btn btn-lg btn-primary" href="/required docs.html">Begin Process!</a></p>
+                                            <Link to="/requiredDocs"><p><a className="btn btn-lg btn-primary">Begin Process!</a></p></Link>
+                                        {/*<Link to="/requiredDocs"><button type="button" class="btn btn-primary">Begin Process!</button></Link>*/}
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +87,7 @@ class Home extends React.Component {
                                     <h2 className="fw-normal">Required Docs</h2>
                                     <p>Wondering all the documents you need for a successful application, what they are and how to
                                         obtain them? We've got you!</p>
-                                    <p><a className="btn btn-primary" href="/required docs.html">Take me there! »</a></p>
+                                    <Link to="/requiredDocs"><p><a className="btn btn-lg btn-primary">Take me there! »</a></p></Link>
                                 </div>{/* /.col-lg-4 */}
                                 <div className="col-lg-3 col-md-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width={140} height={140} fill="currentColor" className="bi bi-pencil bd-placeholder-img" viewBox="0 0 16 16" style={{ color: 'cornflowerblue' }} preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -94,15 +96,15 @@ class Home extends React.Component {
                                     <h2 className="fw-normal">Test Prep</h2>
                                     <p>Wondering how or which materials are the most recommended in the market for SAT preparation?
                                         This is your one-stop as well</p>
-                                    <p><a className="btn btn-primary" href="/test prep.html">Take me there! »</a></p>
+                                        <Link to="/testprep"><p><a className="btn btn-lg btn-primary">Take me there! »</a></p></Link>
                                 </div>{/* /.col-lg-4 */}
                                 <div className="col-lg-3 col-md-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width={140} height={140} fill="currentColor" className="bd-placeholder-img bi bi-laptop" viewBox="0 0 16 16" style={{ color: 'cornflowerblue' }} preserveAspectRatio="xMidYMid slice" focusable="false">
                                         <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                                     </svg>
                                     <h2 className="fw-normal">College App</h2>
-                                    <p>Here, we can show you how to apply to your dream US colleges.</p>
-                                    <p><a className="btn btn-primary mt-5" href="/college app.html">Take me there! »</a></p>
+                                    <p>Here, we can show you how to apply to your dream US colleges.Take a look at insider tips on how to get past one of the most nuanced stages.</p>
+                                    <Link to="/apply"><p><a className="btn btn-lg btn-primary">Take me there! »</a></p></Link>
                                 </div>{/* /.col-lg-4 */}
                                 <div className="col-lg-3 col-md-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width={140} height={140} fill="currentColor" className="bd-placeholder-img bi bi-cash-coin" viewBox="0 0 16 16" style={{ color: 'cornflowerblue' }} preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -113,8 +115,8 @@ class Home extends React.Component {
                                     </svg>
                                     <h2 className="fw-normal">Financial Aid</h2>
                                     <p>And lastly we break what is required and how to complete successful financial aid/
-                                        scholarship applications.</p>
-                                    <p><a className="btn btn-primary mt-4" href="/financial aid.html">Take me there! »</a></p>
+                                        scholarship applications. i.e need-based versus merit-based</p>
+                                        <Link to="/financialAid"><p><a className="btn btn-lg btn-primary">Take me there! »</a></p></Link>
                                 </div>{/* /.col-lg-4 */}
                             </div>{/* /.row */}
                             {/* INFINITE SCHOOLS CAROUSEL */}
@@ -200,8 +202,8 @@ class Home extends React.Component {
                             <hr className="featurette-divider" />
                             <div className="row featurette">
                                 <div className="col-md-7">
-                                    <h2 className="featurette-heading fw-normal lh-1"><a href="/faq.html" className="text-decoration-none">And lastly.<span className="text-muted">FAQs!</span></a>
-                                    </h2>
+                                <Link to="/contactUs" style={{ textDecoration: 'none' }}><h2 className="featurette-heading fw-normal lh-1">And lastly.<span className="text-muted">FAQs!</span>
+                                    </h2></Link>
                                     <p className="lead">And yes, we know you might still have a gazillion questions hence we are
                                         compiling a list of concerns and will provide answers. Keep the questions coming!</p>
                                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/required-docs.css';
+import { Link } from "react-router-dom";
 
 class CollegeApp extends React.Component {
     render() {
@@ -36,7 +37,7 @@ class CollegeApp extends React.Component {
                                     <div className="collapse" id="commonappOverview">
                                         <div className="card card-body">
                                             <p> Ghanaians apply through the <a className="text-decoration-none" href="https://www.commonapp.org">Common App</a> although there is <a className="text-decoration-none" href="https://www.coalitionapp.org">Coaliton
-                                                App</a>
+                                                App </a>
                                                 as
                                                 well.
                                                 Click to watch the video above for a detailed walkthrough of what the CommonApp is,
@@ -201,7 +202,7 @@ class CollegeApp extends React.Component {
                         </div>
                     </div>
                     <hr className="col-3 col-md-2 mb-5" />
-                    <p className="text-center my-0"><a href="/index.html" className="btn btn-primary">Continue To Financial Aid</a></p>
+                    <Link to="/financialAid"><p className="text-center my-0"><a className="btn btn-primary">Continue To Financial Aid</a></p></Link>
                     <p className="text-center my-0"> Questions? Reach out at <a href="mailto: ghprepscholar@gmail.com">ghprepscholar@gmail.com</a></p>
                     <p className="text-center my-0"><a href="#">Back to top</a></p>
                 </main>
